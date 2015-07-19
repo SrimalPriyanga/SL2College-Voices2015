@@ -1,0 +1,80 @@
+/* Srimal Priyanga
+ * Date: 2015-07-18
+ * @ 10.31PM
+ */
+
+.scrollspySL2{
+//Pre Loader
+
+//Navigation
+  .navbar-fixed{
+    nav{
+      .container{
+        .nav-wrapper{
+          .brand-logo{
+            //span{
+            //background-image: url("../img/logo.png");
+            //background-repeat: no-repeat;
+            //background: cover;
+            //}
+          }
+        }
+      }
+    }
+  }
+
+//Intro and videos
+  .introSl2 {
+    .container{
+      .row{
+        .card{
+          .card-reveal{
+            .video-container{
+              margin: 20px 0 0 0;
+              //iframe{
+              //  margin: 20px 0 0 0;
+              //  width: 100%;
+              //}
+            }
+            .speaker-vd{
+              margin: -20px -20px 10px -20px;
+              height: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+//Schedule
+  .scheduleSl2{
+    padding-top: 80px;
+    background: rgb(247, 247, 247);
+    .container{
+      .row{
+        ul{
+          li{
+            .collapsible-header{
+              i{}
+              b{
+                margin-right: 10px;
+                color: #0d47a1;
+              }
+              span{
+                color: #2196f3;
+              }
+            }
+            .collapsible-body{
+              background-color: #fafafa;
+            }
+            &:first-child{
+              .collapsible-header:hover{
+                cursor: default;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
