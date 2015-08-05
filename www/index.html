@@ -13,6 +13,7 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet" >
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
+    <link href="elements/countdown/jquery.countdown.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
@@ -53,12 +54,15 @@
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
         <h1 class="text_h center header cd-headline letters type">
-            <span>SL2 College</span>
+            <span>SL2College</span>
             <span class="cd-words-wrapper waiting">
                 <b class="is-visible">Voices</b>
                 <b>2015</b>
             </span>
         </h1>
+
+        <div id="countdown"></div>
+        <p id="note"></p>
     </div>
 </div>
 
@@ -294,6 +298,8 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src="elements/countdown/jquery.countdown.js"></script>
+    <script src="js/script.js"></script>
 
     </body>
 </html>

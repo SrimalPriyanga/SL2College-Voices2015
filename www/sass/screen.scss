@@ -3,6 +3,12 @@
  * @ 10.31PM
  */
 
+// Colors
+$cl-dark-blue: #01579b;
+$cl-light-blue: #2196F3;
+$cl-schedule-bg: #f7f7f7;
+$cl-collapse-bg: #fafafa;
+
 .scrollspySL2{
 //Pre Loader
 
@@ -19,6 +25,31 @@
             //}
           }
         }
+      }
+    }
+  }
+
+//Main banner
+  #index-banner{
+    .container{
+      h1{}
+      #countdown{
+        span{
+          .position{
+            .digit{
+              border-radius: 0;
+            }
+          }
+        }
+      }
+      #note{
+        color: $cl-collapse-bg;
+        font-size: 13px;
+        margin: 0 auto;
+        padding: 4px;
+        text-align: center;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+        width: 400px;
       }
     }
   }
@@ -49,7 +80,7 @@
 //Schedule
   .scheduleSl2{
     padding-top: 80px;
-    background: rgb(247, 247, 247);
+    background: $cl-schedule-bg;
     .container{
       .row{
         ul{
@@ -58,14 +89,14 @@
               i{}
               b{
                 margin-right: 10px;
-                color: #0d47a1;
+                color: $cl-dark-blue;
               }
               span{
-                color: #2196f3;
+                color: $cl-light-blue;
               }
             }
             .collapsible-body{
-              background-color: #fafafa;
+              background-color: $cl-collapse-bg;
             }
             &:first-child{
               .collapsible-header:hover{
