@@ -31,8 +31,19 @@ $cl-collapse-bg: #fafafa;
 
 //Main banner
   #index-banner{
-    //background: url(http://www.sl2college.org/conference/img/top-bg.png) top center no-repeat;
+    z-index: 0;
+    .banner-overlay{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -5;
+      background: rgba(0,0,0,.25) url(../img/overlay-bg.png);
+    }
+    background: url('../img/intro-bg2.png') top center no-repeat;
     .container{
+      z-index: 1;
       h1.text_h{
         //margin: 40px auto 5px auto;
         min-height: 210px;
@@ -40,6 +51,7 @@ $cl-collapse-bg: #fafafa;
         line-height: 7.35rem;
       }
       h4 {
+        color: #ECF3FF;
         margin: 0px auto 20px auto;
         text-align: center;
       }
@@ -73,6 +85,13 @@ $cl-collapse-bg: #fafafa;
     .container{
       .row{
         .card{
+          .card-content{
+            span{
+              //overflow: hidden;
+              //text-overflow: ellipsis;
+              //white-space: nowrap;
+            }
+          }
           .card-reveal{
             .video-container{
               margin: 20px 0 0 0;
