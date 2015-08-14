@@ -31,8 +31,18 @@ $cl-collapse-bg: #fafafa;
 
 //Main banner
   #index-banner{
+    //background: url(http://www.sl2college.org/conference/img/top-bg.png) top center no-repeat;
     .container{
-      h1{}
+      h1.text_h{
+        //margin: 40px auto 5px auto;
+        min-height: 210px;
+        padding: 5% 0 8% 0;
+        line-height: 7.35rem;
+      }
+      h4 {
+        margin: 0px auto 20px auto;
+        text-align: center;
+      }
       #countdown{
         span{
           .position{
@@ -51,6 +61,10 @@ $cl-collapse-bg: #fafafa;
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
         width: 400px;
       }
+      .register-btn{
+        margin: 20px auto 0px auto;
+        text-align: center;
+      }
     }
   }
 
@@ -62,10 +76,7 @@ $cl-collapse-bg: #fafafa;
           .card-reveal{
             .video-container{
               margin: 20px 0 0 0;
-              //iframe{
-              //  margin: 20px 0 0 0;
-              //  width: 100%;
-              //}
+              height: 50%;
             }
             .speaker-vd{
               margin: -20px -20px 10px -20px;
@@ -79,7 +90,7 @@ $cl-collapse-bg: #fafafa;
 
 //Schedule
   .scheduleSl2{
-    padding-top: 80px;
+    padding-top: 45px;
     background: $cl-schedule-bg;
     .container{
       .row{
@@ -108,4 +119,68 @@ $cl-collapse-bg: #fafafa;
       }
     }
   }
+
+//Venue
+  .parallax-container {
+    max-height: 450px;
+    .parallax {
+      img{
+        transform: translate3d(-50%, 77px, 0px);
+        top: -20%;
+      }
+    }
+  }
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  //Navigation
+  .navbar-fixed{
+    nav{
+      background-color: $cl-light-blue;
+      .nav-wrapper{
+        .brand-logo{
+        }
+        a.button-collapse {
+          left: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  //Navigation
+  .navbar-fixed{
+    nav{
+      background-color: $cl-light-blue;
+      .nav-wrapper{
+        .brand-logo{
+          left: 10px;
+        }
+        a.button-collapse {
+          left: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }

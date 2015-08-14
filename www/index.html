@@ -10,7 +10,10 @@
 
     <!-- CSS  -->
     <link href="css/reset.css" type="text/css" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet">
+    <!--<link href="css/materialize.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="css/style.css" type="text/css" rel="stylesheet" >
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
     <link href="elements/countdown/jquery.countdown.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,19 +38,26 @@
 
 <!--Navigation-->
  <div class="navbar-fixed">
-    <nav id="nav_f" class="default_color" role="navigation">
-        <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo"><img src="img/logo.png" alt=""/></a>
-            <ul id="nav-mobile" class="right side-nav">
-                <li><a href="#intro">Conference</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#venue">Venue</a></li>
-                <li><a href="#">Sponsors</a></li>
-                <li><a href="#">Register</a></li>
-            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-            </div>
-        </div>
-    </nav>
+     <nav>
+         <div class="nav-wrapper">
+             <a href="#top" class="brand-logo"><img src="img/voices2015-logo.png" alt=""/></a>
+             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+             <ul class="right hide-on-med-and-down">
+                 <li><a href="#intro">Conference</a></li>
+                 <li><a href="#schedule">Schedule</a></li>
+                 <li><a href="#venue">Venue</a></li>
+                 <li><a href="#">Sponsors</a></li>
+                 <li><a href="#">Register</a></li>
+             </ul>
+             <ul class="side-nav" id="mobile-demo">
+                 <li><a href="#intro">Conference</a></li>
+                 <li><a href="#schedule">Schedule</a></li>
+                 <li><a href="#venue">Venue</a></li>
+                 <li><a href="#">Sponsors</a></li>
+                 <li><a href="#">Register</a></li>
+             </ul>
+         </div>
+     </nav>
 </div>
 
 <!--Hero-->
@@ -60,9 +70,14 @@
                 <b>2015</b>
             </span>
         </h1>
-
         <div id="countdown"></div>
+        <h4>August 19, 2015 at University of Colombo</h4>
         <p id="note"></p>
+        <div class="register-btn">
+            <button class="btn-large waves-effect waves-light red darken-1" type="submit" name="action">Register
+                <i class="mdi-content-send right white-text"></i>
+            </button>
+        </div>
     </div>
 </div>
 
@@ -199,7 +214,6 @@
                             <i class="fa fa-clock-o"></i><b>08.15 AM</b>
                             <span class="blue-text">Registration</span>
                         </div>
-                        <!--<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>-->
                     </li>
                     <li>
                         <div class="collapsible-header active waves-effect waves-block">
@@ -215,16 +229,16 @@
                         </div>
                         <div class="collapsible-body"><p><b>Nayana Samaranayake</b> <br />Founder, SL2College <br />Former Software Engineer at Google</p></div>
                     </li>
-                    <!--<li>-->
-                        <!--&lt;!&ndash;<div class="collapsible-header">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<i class="fa fa-clock-o"></i><b>09.30 AM</b>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<span class="blue-text">Keynote 1</span>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<div class="collapsible-body">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<p>Key role of transdisciplinary thinking in higher education. <br />&ndash;&gt;-->
-                                <!--&lt;!&ndash;<b>Prof. Mohan Munasinghe</b> <br />Nobel Laureate (Joint winner-2007 Nobel Prize for Peace) <br />&ndash;&gt;-->
-                                <!--&lt;!&ndash;Founder Chairman of the Munasinghe Institute for Development </p>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="fa fa-clock-o"></i><b>09.30 AM</b>
+                            <span class="blue-text">Keynote 1</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p><u>Key role of transdisciplinary thinking in higher education.</u> <br />
+                                <b>Prof. Mohan Munasinghe</b> <br />Nobel Laureate (Joint winner-2007 Nobel Prize for Peace) <br />
+                                Founder Chairman of the Munasinghe Institute for Development </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -234,58 +248,11 @@
 
 <!--Parallax-->
 <section id="venue" class="scrollspy parallax-container">
-    <div class="parallax"><img src="img/parallax1.png"></div>
+    <div class="parallax"><img src="img/location-bg.png"></div>
 </section>
 
 <!--Footer-->
 <footer id="contact" class="page-footer default_color scrollspy">
-    <div class="container">  
-        <div class="row">
-            <div class="col l6 s12">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="mdi-action-account-circle prefix white-text"></i>
-                            <input id="icon_prefix" type="text" class="validate white-text">
-                            <label for="icon_prefix" class="white-text">First Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="mdi-communication-email prefix white-text"></i>
-                            <input id="icon_email" type="email" class="validate white-text">
-                            <label for="icon_email" class="white-text">Email-id</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="mdi-editor-mode-edit prefix white-text"></i>
-                            <textarea id="icon_prefix2" class="materialize-textarea white-text"></textarea>
-                            <label for="icon_prefix2" class="white-text">Message</label>
-                        </div>
-                        <div class="col offset-s7 s5">
-                            <button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Submit
-                                <i class="mdi-content-send right white-text"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col l3 s12">
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Social</h5>
-                <ul>
-                    <li>
-                        <a class="white-text" href="">
-                            <i class="small fa fa-facebook-square white-text"></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://www.linkedin.com/in/joashp">
-                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="footer-copyright default_color">
         <div class="container">
             SL2College Voices 2015.
@@ -296,7 +263,7 @@
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
     <script src="js/init.js"></script>
     <script src="elements/countdown/jquery.countdown.js"></script>
     <script src="js/script.js"></script>
