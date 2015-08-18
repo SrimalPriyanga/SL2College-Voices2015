@@ -148,6 +148,15 @@ $cl-collapse-bg: #fafafa;
         top: -20%;
       }
     }
+    h3{
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      margin: 0 auto;
+      background: rgba(66, 136, 85, 0.26);
+      width: 100%;
+      color: #ECF3FF;
+    }
   }
 
 }
