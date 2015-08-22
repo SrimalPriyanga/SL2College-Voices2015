@@ -2,13 +2,13 @@
 	
 	var note = $('#note'),
 		ts = new Date(2015, 08, 19, 08, 30),
-		newYear = true;
+		newYear = false;
 	
 	if((new Date()) > ts){
 		// The new year is here! Count towards something else.
 		// Notice the *1000 at the end - time must be in milliseconds
 		ts = (new Date()).getTime();
-		newYear = false;
+		newYear = true;
 	}
 		
 	$('#countdown').countdown({
@@ -23,7 +23,7 @@
 			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
 			
 			if(newYear){
-				message += "left until the new year!";
+				message += "left until the Voices2016!";
 			}
 			else {
 				message += "left to "+days+" days from now!";
