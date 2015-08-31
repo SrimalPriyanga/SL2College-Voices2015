@@ -162,6 +162,29 @@ $cl-collapse-bg: #fafafa;
     }
   }
 
+//Sponsors
+  .sponsors{
+    .col{
+      text-align: center;
+      img{
+        margin: 0 auto;
+      }
+      .gold{
+        color: #ffd700;
+      }
+      .bronze{
+        color: #CD7F32;
+      }
+      .silver{
+        color: #C0C0C0;
+      }
+    }
+    .s12{
+      a{
+        margin: 0 20px;
+      }
+    }
+  }
 }
 
 /*==========  Mobile First Method  ==========*/
