@@ -131,10 +131,8 @@ $cl-collapse-bg: #fafafa;
             .collapsible-body{
               background-color: $cl-collapse-bg;
             }
-            &:first-child{
-              .collapsible-header:hover{
+            .cursor-default:hover{
                 cursor: default;
-              }
             }
           }
         }
