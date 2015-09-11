@@ -119,6 +119,9 @@ $cl-collapse-bg: #fafafa;
         ul{
           li{
             .collapsible-header{
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
               i{}
               b{
                 margin-right: 10px;
@@ -210,6 +213,26 @@ $cl-collapse-bg: #fafafa;
         a.button-collapse {
           left: 5px;
         }
+      }
+    }
+  }
+
+  //Main banner
+  #index-banner{
+    .container{
+      h1.text_h{
+        font-size: 60px !important;
+        margin: 0 auto !important;
+      }
+      #countdown{
+        display: none;
+      }
+      #note{
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+      .register-btn{
       }
     }
   }
