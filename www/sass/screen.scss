@@ -119,9 +119,9 @@ $cl-collapse-bg: #fafafa;
         ul{
           li{
             .collapsible-header{
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
+              overflow: hidden !important;
+              text-overflow: ellipsis !important;
+              white-space: nowrap !important;
               i{}
               b{
                 margin-right: 10px;
