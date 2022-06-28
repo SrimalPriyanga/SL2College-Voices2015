@@ -1,0 +1,827 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <title>Sl2College Conference 2013</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+<style>
+.main-features {
+  margin-top: 20px;      
+}
+.hero-unit .span5{
+  font-size : 150%;
+}
+.well .span3{
+  padding-top : 50px;
+}
+
+#speakers{
+width: 88%; margin-left: 10px;
+}
+
+#speakers li{
+  cursor : pointer;
+}
+
+#speakers li:first-child{
+   margin-top:4px;
+}
+
+#speakers .span7{
+  overflow : hidden;
+}
+
+#speakers .span7 div{
+  height : 190px;
+}
+.thumbnail{
+  border : none;
+}
+#reveal{
+  margin-bottom : 10px;
+}
+
+
+#speakers li:hover {
+
+	-webkit-box-shadow: 0px 0px 4px #000;
+	-moz-box-shadow: 0px 0px 4px  #000;
+	box-shadow: 0px 0px 4px  #000; 
+}
+
+#partners img{
+  margin: -5px 0 -10px;
+}
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+.align-justify { text-align: justify; }
+
+.push-down { margin-bottom: 1em; }
+.push-left { margin-left: 1em; }
+.push-right { margin-right: 1em; }
+.push-up { margin-top: 1em; }
+
+.fullBrightInfo{
+	display:none !important;
+}
+
+
+@media(min-width: 980px) {
+  .navbar-fixed-top  {
+    margin-top: 60px;
+  }
+}
+</style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootbox.min.js"></script>
+    <script type="text/javascript">
+     $(function() {
+        $('#tabs a').click(function(e) {
+          e.preventDefault();
+          $(this).tab('show');
+        });
+        $("#speakers li").click(function(){bootbox.alert( $(this).children('.span7').html() );})
+
+	$("#speakers li").hover(function () {
+		
+		// SET OPACITY TO 70%
+		$(this).stop().animate({
+			opacity: .5,
+			background: "url(img/mag.png) center center no-repeat #000" 
+			}, "slow");
+		},
+ 
+		// ON MOUSE OUT
+		function () {
+	 
+		// SET OPACITY BACK TO 50%
+		$(this).stop().animate({
+			opacity: 1,
+			background : "white"
+			}, "slow");
+		});
+	});
+      
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=508330385887577";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </head>
+  
+  <body>
+<div class="container-fluid">
+  <div class="row-fluid main-features">
+    <div class="hero-unit" style="padding:20px;">
+      <img src="http://www.sl2college.org/images/banners/sl2c-conference.jpg"
+      alt="sl2cbanner" width="100%" class="img-rounded"> 
+    </div>
+  </div>
+  <div id="reveal" class="align-center row-fluid">
+    <div class="span5 offset4">
+<a class="btn btn-block disabled btn-error btn-large" target="_blank" href="https://docs.google.com/a/sl2college.org/spreadsheet/viewform?formkey=dFVoXzlHVUQ5Z05rS3JlZEctLTY2MUE6MQ#gid=0">Registrations Closed</a>      
+<br>
+      <br> 
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span3">
+      <div class="well align-center" id="partners">
+        <h4>Participating Institutes</h4>
+        <ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://www.fulbrightsrilanka.com/">
+              <img src="http://www.sl2college.org/images/stories/aboutus/fulbright.jpg" alt="Fulbright">
+            </a> 
+          </li>
+          <li class="span6">
+            <a class="thumbnail" href="">
+              <img src="http://sl2college.com/conference/img/partners/austradelogo.jpg" alt="AUSTRADE ">
+            </a> 
+          </li>
+        </ul>
+      </div>
+      <div class="well align-center" id="partners">
+        <h4>Official Beverage Partner</h4>
+        <ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://www.elephanthouse.lk">
+              <img src="http://sl2college.com/conference/img/partners/elephantH.jpg" alt="Elephant House">
+            </a> 
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="span6">
+      <ul class="nav nav-tabs" id="tabs">
+        <li class="active">
+          <a href="#about">About</a> 
+        </li>
+        <li>
+          <a href="#agenda">Agenda</a> 
+        </li>
+        <li>
+          <a href="#speakers">Speakers</a> 
+        </li>
+        <li>
+          <a href="#reg">Register</a> 
+        </li>
+        <li>
+          <a href="#contact">Contact</a> 
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane" id="reg">
+          <p class="lead align-center">Registration for "Voices 2013" is closed due to space limitations. 
+          </p>
+
+          <h4>Registration Fee:</h4>
+          <ul>
+            <li>Students(ID is required): Rs. 200</li>
+            <li>General Public: Rs. 400</li>
+          </ul>
+
+	  <h4>Registration Options:</h4>
+          <ul>
+            <li>Dalog eZ Cash payment method (Must be 18 year or above)</li>
+            <li>Walk in Registration </li>
+            <li>Call Marlene at (+94) 077-3833804 </li>
+          </ul>
+		
+	  <h4>Dialog eZ Cash payment instructions:</h4>
+	  <ol>
+            <li>Dial #111# and select “Institute Payment” from menu</li>
+            <li>Enter PIN</li>
+            <li>Enter the relevant Institute Code: SLCO</li>
+            <li>Enter account number ( Enter a random number not important )</li>
+            <li>Enter amount (Rs. 200 - Students and Rs. 400 - Public)</li>
+            <li>Confirm transaction</li>
+            <li>You will receive a receipt via SMS</li>
+          </ol>
+	  <h4>Walk In Registration Locations: Cash Only</h4>
+	  <ul>
+		<li class="fullBrightInfo"><h5>Fulbright Commission </h5> 
+ No.55, Abdulcaffoor Mw, Colombo 3, <br>
+ Phone : + 94 11 256 4176</li>
+		<li><h5>Edex Secretariat</h5>
+  Royal College Union, <br>
+  Rajakeeya Mawatha, Colombo 7 <br>
+  Dilan : +94 777 41 6185 <br>
+  Telephone : +94 11 5521497 </li>
+	  </ul>
+        </div>
+        <div class="tab-pane" id="speakers">
+          <ul class="unstyled">
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/dian.jpg" class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Mr. Dian Gomes</h4>
+                <div>
+                  <p>DIAN GOMES is a Group Director of MAS Holdings; a USD 1 billion enterprise,
+                    and provides leadership to the group’s largest Business Division, MAS Intimates.
+                    He also plays a crucial role of overseeing Human resources, Corporate Communications,
+                    Branding &amp; CSR of MAS Holdings; which employs over 58,000 associates
+                    across 10 countries.</p>
+                  <p>A Fellow member of the Chartered Institute of Management Accountants (UK),
+                    the Association of Chartered Certified Accountants (UK) and Certified Practicing
+                    Accountants (Australia), he received his Executive Education at Wharton,
+                    Ashridge and Harvard Business Schools. Dian was President of the Chartered
+                    Institute of Management Accountants (UK) – Sri Lanka Division in 2001/2002.</p>
+                  <p>Dian was President of the Sri Lanka Amateur Boxing Association for 05
+                    years (2004-2009), and was the Secretary of the International Boxing Association
+                    (AIBA) Finance Commission (2007-2010). In 2013, he was appointed as a member
+                    of the Commonwealth Advisory Board on Sport (CABOS), the key sports policy
+                    advisory body to the Commonwealth Secretariat. He is the Vice President
+                    of the National Olympic Committee of Sri Lanka, and has been Chef De Mission
+                    for several international sporting events including the Beijing Olympics
+                    in 2008. Dian also holds the Vice Presidency of the National Association
+                    of Fencing, Sri Lanka.</p>
+                  <p>‘Costumes of Sri Lanka’, a book Dian co-authored was awarded Best Prose
+                    Non-Fiction at the State Literary Awards in 2003. ‘Highly Commended’ by
+                    CIMA-UK at the Business Leader Awards in London 2004, Dian has also been
+                    recognized as one of Sri Lanka’s ‘Male Icons’ by the Sri Lanka Institute
+                    of Marketing in 2007, and awarded the coveted ‘Brand Leadership Award’
+                    under the Individual Category, in Mumbai, by the World Brand Congress in
+                    2009. In 2013, ten years after he was awarded Business Leader of the Year
+                    2003 at the CIMAJanashakthi Pinnacle Awards, Dian was once more honoured
+                    at the CIMA Leadership Awards as Business Icon of the Year for 2012.</p>
+                  <p>His work ethic has won Dian peer respect on a global scale, gaining him
+                    invitations to international discussion panels, including the Symposium
+                    of Gender Inequality in Emerging Markets, at Green Templeton College, University
+                    of Oxford, UK in January 2013</p>
+                  <p>Dian is zealous about developing the next generation of civic and corporate
+                    leaders of Sri Lanka and has presented a number of papers on organizational
+                    behavior and delivered over 250 leadership and motivational lectures at
+                    a variety of Sri Lankan and international forums, including the prestigious
+                    SAID Business School, University of Oxford, UK.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/asanga.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Mr. Asanga Abeygoonasekara</h4>
+                <div>
+                  <p>Asanga Abeyagoonasekera is the Executive Director of the Premiere National
+                    Think Tank namely Lakshman Kadirgamar Institute for International Relations
+                    and Strategic Studies (LKIIRSS). He is the Advisor to the Minister of External
+                    Affairs Hon.Prof.G.L.Peiris and the Director General of Bandaranayake International
+                    Diplomatic training Institute(BIDTI).</p>
+                  <p>Prior to this, he was the Chairman of the Sri Lanka Foreign Employment
+                    Agency the only Government Foreign Recruitment Agent 2010-2011. Soon after
+                    the Asian Tsunami in 2004 which destroyed many fishery harbours, he was
+                    appointed Chairman of the Ceylon Fishery Harbours Corporation (CFHC) at
+                    the age of 27 and served until 2010. He was the youngest appointed for
+                    all three positions. Before joining the Government sector he was in telecommunications
+                    sector at Sri Lanka Telecom and Hutchison Lanka.</p>
+                  <p>He holds a BSc in Computer Science, MBA from Australia, Executive Education
+                    from Harvard Kennedy School, India School of Business(ISB) and Lee Kuan
+                    Yew School of Public Policy Singapore. He was awarded for his outstanding
+                    academic achievement from Golden Key International Honour Society. His
+                    primary education was at S. Thomas' Preparatory School &amp; Ananda College.</p>
+                  <p>Asanga was selected as a Young Global Leader in 2012 by World Economic
+                    Forum, Davos,Switzerland. He is the founding Curator of Global Shapers
+                    Colombo Hub for the World Economic Forum and the Global Dignity Country
+                    Chair for Sri Lanka initiated by His Royal Highness Crown Prince of Norway.
+                    Asanga was invited as a member for the World Entrepreneurship Forum in
+                    France. He is an alumnus of International visitors leadership program (IVLP)
+                    from US State Department. Asanga has participated and spoken in many Global
+                    Forums and seminars. He has been a Panelist at the World Economic Forum
+                    and at many international think tanks.</p>
+                  <p>He is the only son of late Ossie Abeygunasekera who was the leader of
+                    Sri Lanka Mahajana Pakshaya (SLMP), presidential candidate and Member of
+                    Parliament from Colombo District, Sri Lanka. Asanga's father was assassinated
+                    by a Liberation Tigers of Tamil Eelam (LTTE) suicide attack in 1994.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/arj.jpg" class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Mr. Arj Wignaraja</h4>
+                <div>
+                  <p>Arj Wignaraja is a founder and Managing Director of the Asia operations
+                    of Remote Sensing Metrics, a US-Sri Lanka company that provides proprietary
+                    reports to Wall Street investment firms and retailers, based on high-resolution
+                    satellite imagery. He is also a Senior Advisor at Stax, Inc., a global
+                    strategy consulting firm, and formerly served as Managing Director of the
+                    Colombo, Sri Lanka office. Arj’s expertise includes the Asia-Pacific region,
+                    where he advises corporate clients on market entry and expansion in high
+                    growth areas such as education, financial services, and manufacturing,
+                    with a particular emphasis on data analytics and consumer-driven insights.</p>
+                  <p>Prior to returning to Sri Lanka and establishing the Stax Colombo office
+                    in 2005, Arj served as a director in Stax's Chicago office, where he worked
+                    with financial service clients on growth opportunities and competitive
+                    challenges, and evaluated investment opportunities for private equity funds.
+                    Prior to joining Stax, Arj was with The Boston Consulting Group (BCG),
+                    where he helped formulate business strategies for Fortune 500 clients in
+                    the financial services and industrial goods sectors.</p>
+                  <p>Arj holds an MBA from the Kellogg Graduate School of Management at Northwestern
+                    University, and a BA in Economics with Honors from Princeton University.
+                    He is an alumnus of Royal College, where he captained the tennis and debating
+                    teams, and was vice captain of the rowing team. He was a member of the
+                    winning cast at the Shakespeare Drama Competition, where he was a co-winner
+                    of the Best Actor trophy.</p>
+                  <p>In his spare time, Arj pursues his interest in entrepreneurship as a member
+                    of the Lankan Angels Network (LAN) which supports entrepreneurs and provides
+                    seed funding for new businesses. He also serves as a visiting lecturer
+                    at Wisdom Business Academy, lecturing for the Enterprise Strategy paper
+                    at CIMA Strategic Level. Whenever possible, he pursues his passion for
+                    theater, primarily as a spectator, but occasionally venturing on stage.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/arjuna.jpg" class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Vidya Jothi Prof. Arjuna Aluwihare</h4>
+                <div>
+		<p>Vidya Jothi Prof. Arjuna Aluwihare Emeritus Professor of Surgery at the University of Peradeniya. Apart from an illustrious career as a surgeon, he has been the Vice Chancellor of his University, Chairman of the University Grants Commission, and Chairman of the Board of Study in Surgery of the Postgraduate Institute of Medicine in Colombo, overseeing Surgical Training in the whole country. He is Ex President of the National Academy of Sciences of Sri Lanka, bears several prestigious fellowships from Sri Lanka and abroad and has written widely inclduing a Chapter in the recent Oxford Textbook of Surgery.
+</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/sujatha.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Dr. Sujatha Gamage</h4>
+                <div>
+                  <p>Sujata Gamage specializes in building capacity through education, 
+                  training and knowledge networks, and evaluating capacity.  She is currently 
+                  the Team Leader of the Human Capital Research Program at LIRNEasia. On-going 
+                  work by the program include a partnership with  Wijeya Newspapers to publish 
+                  a series of education guides for school leavers, an action research project 
+                  to formulate 5-year Development plan for education in the Eastern Province 
+                  and several consultancies in Knowledge Mapping.
+
+                  Previously Sujata served as (a) strategic planning specialist at the Ohio State 
+                  University, USA, developing an academic quality scorecard for that university 
+                  (b) the Analytic Director of a team of consultants at QRC Macro International 
+                  in Bethesda, Maryland, USA, responsible for conducting and reporting on science 
+                  resources for the US National Science Foundation and (c) the Director General of 
+                  the Tertiary and Vocational Education Commission of Sri Lanka, revitalizing the 
+                  implementation of an ADB funded project on a national vocational qualification 
+                  framework for Sri Lanka.
+
+                  She currently serves as a member of the (a) Standing committee on Tertiary and Technical 
+                  Education at the National Education Commission of Sri Lanka (b) Human Resource Committee 
+                  of the Ceylon Chamber of Commerce and (c) Advisory Board to the Ministry of Education in 
+                  the Eastern Province.
+
+                  Sujata holds PhD in Chemistry from the University of British Columbia, Canada, and a Masters 
+                  in Public Administration from Ohio State University of USA.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3" style="">
+                <img src="http://www.sl2college.org/images/stories/aboutus/CharithaRat.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Mr. Charitha Ratwatte</h4>
+                <div>
+                  <p>Mr. J. Charitha Ratwatte Jr. is the founder and Managing Director of Rural
+                    Returns (Guarantee) Limited Sri Lanka, a non-profit Company that works
+                    with rural communities to find sustainable pathways out of poverty.</p>
+                  <p>Charitha earned a BSc. (Hons) in Information Systems from Manchester Metropolitan
+                    University, UK, and later an MBA from the Stanford Graduate School of Business,
+                    with concentrations in the Public Management and Global Management Programs.</p>
+                  <p>Charitha has five years' experience in the Sri Lankan software industry.
+                    He is a Director of SL2College, a volunteer-driven organization dedicated
+                    to connecting students with free, high-quality advice on higher education
+                    options. He serves as Chief Manager - Sustainability at Dialog Axiata PLC,
+                    a leading Sri Lankan communications service provider.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/arun.jpg" class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Mr. Arun Dias Bandaranaike</h4>
+                <div>
+                  <p>Arun Dias Bandaranaike is a professional broadcaster and TV Presenter
+                    with over 20 years as host on numerous programs and shows. Has served as
+                    interview host, moderator, and Compere at musical events and as A professional
+                    Master of Ceremonies at State, Corporate and International Conferences.
+                    He also has been resource person for Sri Lanka Television Training Institute
+                    and other broadcast training institutes.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/sanjiva.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Dr. Sanjiva Weerawarna</h4>
+                <div>
+                  <p>Dr. Sanjiva Weerawarna founded, and is currently Chairman and CEO of WSO2
+                    an innovative Open Source technology company based in Sri Lanka. Prior
+                    to that, he spent nearly 8 years in IBM Research, where he was one of the
+                    founders of the Web services platform. In recognition for his company-wide
+                    technical leadership, Sanjiva was elected to the IBM Academy of Technology
+                    in 2003. Sanjiva has been involved with open source software for many years.
+                    Sanjiva also teaches and guides student projects part-time in the Computer
+                    Science &amp; Engineering department of the University of Moratuwa. He's
+                    a member of the Faculty of Engineering Industry Consultative Board of the
+                    university. Prior to joining IBM, Sanjiva spent 3 years at Purdue University
+                    as visiting faculty, where he received his Ph.D. in Computer Science in
+                    1994.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/fulbright.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Fulbright</h4>
+                <div>
+                  <p>The U.S.-Sri Lanka Fulbright Commission, formally known as the U.S. Educational
+                    Foundation of Sri Lanka, is an autonomous bi-national commission established
+                    by the governments of the U.S and Sri Lanka. Its activities began when
+                    representatives of the two governments initiated a short-term program by
+                    an executive Agreement signed on 17th, November 1952. The Program gained
+                    permanent status in 1964 with the signing of an Agreement for the establishment
+                    of the present U.S. Educational Foundation of Sri Lanka,. The US-SLFC is
+                    the only independent commission of its kind in the field of academic exchange
+                    in Sri Lanka, and the only such entity that functions under a bi-national
+                    Board of Directors.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/bc.jpg" class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>British Council</h4>
+                <div>
+                  <p>The British Council is the United Kingdom's international organization,
+                    connecting people worldwide with learning opportunities and creative ideas
+                    from the UK, and building lasting relationships between the UK and other
+                    countries. British Council Sri Lanka concentrates on promoting the English
+                    language as a tool for international communication, and a key to educational
+                    opportunities. Provides links to the global information society and UK
+                    networking opportunities for Sri Lankan professionals, supports the exchange
+                    of ideas and experience between Britain's education system and Sri Lanka
+                    and demonstrating the energy and creativity of British culture and providing
+                    opportunities for exchange and cooperation between British and Sri Lanka.</p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src=""
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>European Union Delegation</h4>
+                <div>
+                  <p>The general objectives of the EU Delegation in Sri Lanka are to enhance and develop,
+				     through dialogue and partnership, the various aspects of co-operation between the
+				     European Union and Sri Lanka. Erasmus Mundus, a scholarship program facilitated by
+					 the EU delegation, is an EU funded cooperation and mobility programme in the field of 
+					 higher education. Its goals are to enhance the quality of education and to promote dialogue 
+					 between people and cultures through cooperation among universities and research institutes 
+					 of different countries.  The programme offers scholarships and fellowships to students, 
+					 researchers and university staff to study or research at bachelor, masters, doctoral or 
+					 postdoctoral levels in European universities. Sri Lanka has been fully eligible for the Erasmus 
+					 Mundus programme since 2009.
+				  </p>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://sl2college.com/conference/img/partners/austrade.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Australian Trade Commission (Austrade)</h4>
+                <div>
+		  <p>The Australian Trade Commission – Austrade – is the Australian Government’s trade, investment and education promotion agency. Through a network of offices in over 50 countries, Austrade assists Australian companies to grow their international business, attracts productive foreign direct investment into Australia and promotes Australia’s education sector internationally.</p>
+		  <p>The role is to advance Australia's international trade, investment and education interests by providing information, advice and services.</p>
+		  <ul>
+			<li>Help Australian companies to grow their business in international markets, including through administration of the Export Market Development Grants (EMDG) scheme and the TradeStart program.</li>
+			<li>Provide coordinated government assistance to attract and facilitate productive foreign direct investment (FDI) into Australia.</li>
+			<li>Promote the Australian education sector in international markets and assist Australian education providers with market information.</li>
+			<li>Provide advice to the Australian Government on its trade and investment policy agenda.</li>
+			<li>Deliver Australian consular, passport and other government services in designated overseas locations.</li>
+			<li>Manage the Building Brand Australia program to enhance awareness of contemporary Australian skills and capability and enrich Australia’s global reputation.</li>
+		  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sl2college.org/images/stories/aboutus/nayana.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Mr. Nayana Samaranayake</h4>
+                <div>
+                  <p>Nayana Samaranayake is one of the co-founders of SL2College. Nayana started
+                    SL2College as a simple Yahoo group in 2005 to help answer questions related
+                    to higher education. In 2008, he joined other volunteers with similar interests
+                    to expand SL2College to the organization it currently is. He received his
+                    B.Sc. in Computer Science with a minor in Economics in 2003 from Illinois
+                    Institute of Technology, USA. He then went on to complete a M.Sc. in Computer
+                    Science in 2005 from Stanford University. He has since been working for
+                    Google Inc. as a software engineer in the Web Search Infrastructure group.</p>
+                </div>
+              </div>
+            </li>
+      	    <li class="row-fluid well">
+              <div class="span3">
+                <img src="http://www.sangam.org/2011/11/images/Sri_Lanka_Institute_of_Nano_Technology_Director_Prof_Ajith_de_Alwis.jpg"
+                class="img-polaroid"> 
+              </div>
+              <div class="span7 offset1">
+                <h4>Prof. Ajith De Alwis</h4>
+                <div>
+                  <p>Prof. Ajith De Alwis is a professor at the Department of Chemical and Process 
+                    Engineering at the University of Moratuwa,Sri Lanka. Prof. De Alwis’s interested 
+                    lies in the Process Industry - Developing environmentally friendly technologies 
+                    for Sri Lanka, Appropriate technologies Energy Efficiency and Conservation techniques
+                    for Process Industries, Renewable Energy Systems Process modifications and optimisation 
+                    techniques to maximize yields and resource usage. Solid Waste Management and Waste to 
+                    Energy Systems and Food processing systems. Prof. De Alwis also acted as the Science 
+                    Team Leader at the Sri Lanka Institute of Nanotechnology within the years of 2008-2011. </p>
+				</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="agenda">
+          <ul class="unstyled">
+            <h6>Morning session 1</h6>
+            <li class="alert alert-info">Registration
+              <span class="pull-right">8.30 am</span> 
+            </li>
+            <li class="alert">Welcome address and introduction the keynote speaker&nbsp;
+              <br> Host - Mr. Arun Dias Bandaranaike
+              <span class="pull-right">9.00 am</span> 
+            </li>
+            <li class="alert">Keynote address
+              <br> By Mr. Dian Gomes, Group Director MAS Holdings
+              <span class="pull-right">9.15 am</span> 
+            </li>
+            <li class="alert">Introduction to SL2College
+              <br> By Mr. Sanjiva Weerawarna, CEO WSO2, Board Chair SL2College
+              <span class="pull-right">10.20 am</span> 
+            </li>
+            <li class="alert alert-success">Tea Break
+              <span class="pull-right">11.00 am</span> 
+            </li>
+            <h6>Morning Session 2</h6>
+            <li class="alert">Panel speaker 1: Vidya Jothi Prof. Arjuna Aluwihare
+              <br> Emeritus Professor of Surgery at the University of Peradeniya
+              <span class="pull-right">11.20 am<span>
+</span> 
+              </span>
+            </li>
+            <li class="alert">Panel speaker 2: Prof. Ajith De Alwis
+              <br> Professor of Chemical and Process Engineering University of Moratuwa
+              <span
+              class="pull-right">11.40 am
+                <span>
+</span> 
+                </span>
+            </li>
+            <li class="alert">Panel speaker 3: Mr. Arj Wignaraja,
+              <br> Founder and Managing&nbsp;Director - Remote Sensing Metrics Asia
+              <span
+              class="pull-right">12.00 pm
+                <span>
+</span> 
+                </span>
+            </li>
+            <li class="alert">Panel speaker 4: Dr. Sujatha Gamage,
+              <br> Scientist at Lirneasia
+              <span class="pull-right">12.20 pm<span>
+</span> 
+              </span>
+            </li>
+            <li class="alert alert-info">Questions and Answer Session
+              <span class="pull-right">12.40 pm<span>
+</span> 
+              </span>
+            </li>
+            <li class="alert alert-success">Lunch
+              <span class="pull-right">12.55 pm<span>
+</span> 
+              </span>
+            </li>
+            <h6>Afternoon session</h6>
+            <li class="alert">Panel speaker 1: Ms. Nelum Senadira,
+              <br> The US-Sri Lanka Fulbright Commission
+              <span class="pull-right">2.00 pm</span> 
+            </li>
+            <li class="alert">Panel speaker 2: Mr. Charitha Ratwatte,
+              <br> Chief Manager - Sustainability at Dialog Axiata PLC
+              <span class="pull-right">2.15 pm</span> 
+            </li>
+            <li class="alert alert-info">Questions and Answer Session
+              <span class="pull-right">2.35 pm<span>
+            </span> 
+              </span>
+            </li>
+            <hr>
+            <li class="alert">Panel speaker 1: Mr. Michael Carter, Trade 
+			Commission South Asia of Australian Trade Commission (Austrade)
+              <span class="pull-right">2.55 pm</span> 
+            </li>
+            <li class="alert ">Panel speaker 2: Mr. Asanga Abeyagoonasekara,
+              <br> Executive Director at The Lakshman Kadirgamar Institute for International
+              Relations and Strategic Studies
+              <span class="pull-right">3.10 pm</span> 
+            </li>
+            <li class="alert alert-info">Questions and Answer Session
+              <span class="pull-right">3.25 pm<span>
+            </span> 
+              </span>
+            </li>
+            <hr>
+            <li class="alert">Panel speaker 2: British Council
+              <span class="pull-right">4.00 pm</span> 
+            </li>
+            <li class="alert">Panel speaker 2: European Union Delegation
+              <span class="pull-right">4.15 pm</span> 
+            </li>
+            <li class="alert alert-info">Questions and Answer Session
+              <span class="pull-right">4.30 pm<span>
+            </span> 
+              </span>
+            </li>
+            <hr>
+            <li class="alert alert-block alert-success">Closing remarks - Mr. Nayana Samaranayake,
+              <br> Founder and Director - SL2College
+              <span class="pull-right">4.45 pm</span> 
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane align-center" id="contact">
+          <p>Please send all your queries to
+            <br>
+            <a href="mailto:info@sl2college.org">info@sl2college.org</a> or
+            <br> Marlene on
+            <a href="tel:94773833804">(+94) 077-3833804</a> .</p>
+        </div>
+	<div class="tab-pane active align-center" id="about">
+          <p class="lead">Welcome to SL2College VOICES 2013!
+            <br>
+            <small>This is the first annual undergraduate conference organized by SL2College.</small>
+          </p>
+          <div class="lead">Not sure of your plans beyond A/Ls? <br><br>
+          Interested in undergraduate studies but confused by the many options? <br>
+	  <br>
+          Clear all your doubts!</div>
+          <br>
+          <p>Listen to some of the leading entrepreneurs, scientists and academics
+            in Sri Lanka</p>
+          <p>Understand the options available in
+            <big>Sri Lanka, USA, Australia, Germany, UK</big>and many more countries</p>
+        </div>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="well align-center">
+        <h4>Conference Partners</h4>
+        <ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://edex.lk/">
+              <img src="http://sl2college.com/conference/img/partners/EDEX.jpg" alt="Edex">
+            </a> 
+          </li>
+        </ul>
+      </div>
+      <div class="well align-center">
+        <h4>Media Partners</h4>
+        <ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://www.island.lk/">
+              <img src="http://sl2college.com/conference/img/partners/DI.jpg" alt="The Island">
+            </a> 
+          </li>
+          <li class="span6">
+            <a class="thumbnail" href="http://www.island.lk/">
+              <img src="http://sl2college.com/conference/img/partners/SI.jpg" alt="Sunday Island">
+            </a> 
+          </li>
+        </ul>
+        <ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://www.divaina.com/">
+              <img src="http://sl2college.com/conference/img/partners/DIVA-S.jpg" alt="Divayina">
+            </a> 
+          </li>
+          <li class="span6">
+            <a class="thumbnail" href="http://www.divaina.com/">
+              <img src="http://sl2college.com/conference/img/partners/DIVA.jpg" alt="Divayina">
+            </a> 
+          </li>
+        </ul>
+        <ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://www.navaliya.com/">
+              <img src="http://sl2college.com/conference/img/partners/Navaliya.jpg" alt="Nawaliya">
+            </a> 
+          </li>
+          <li class="span6">
+            <a class="thumbnail" href="http://www.vidusara.com/">
+              <img src="http://sl2college.com/conference/img/partners/VD.jpg" alt="Vidusara">
+            </a> 
+          </li>
+        </ul>
+      </div>
+      <div class="well align-center">
+        <h4>Online Media Partners</h4>
+        <ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://digit.lk/">
+              <img src="http://sl2college.com/conference/img/partners/digit.jpg" alt="Digit.lk">
+            </a> 
+          </li>
+          <li class="span6">
+            <a class="thumbnail" href="http://readme.lk/">
+              <img src="http://sl2college.com/conference/img/partners/readme.png" alt="Readme.lk">
+            </a> 
+          </li>
+        </ul>
+      </div>
+      <div class="well align-center">
+        <h4>Tamil media partner</h4>
+	<ul class="thumbnails">
+          <li class="span6">
+            <a class="thumbnail" href="http://www.virakesari.lk/">
+              <img src="http://sl2college.com/conference/img/partners/daily.jpg" alt="Virakesari">
+            </a> 
+          </li>
+          <li class="span6">
+            <a class="thumbnail" href="http://metromirror.lk/">
+              <img src="http://sl2college.com/conference/img/partners/metro.jpg" alt="Metro Mirror">
+            </a> 
+          </li>
+        </ul>
+      </div>
+      <div class="well">
+        <div class="fb-like-box" data-href="https://www.facebook.com/sl2college"
+        data-width="292" data-show-faces="true" data-stream="false" data-show-border="false"
+        data-header="false"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<footer class="align-center">Copyright &copy; 2013 Sl2College
+  <ol class="inline">
+    <li>
+      <a href="http://sl2college.org">www.sl2college.org</a> 
+    </li>
+  </ol>
+</footer>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5379001-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+
+</html>
+
